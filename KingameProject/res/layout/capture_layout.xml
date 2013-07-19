@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+	
+	<SurfaceView 
+        android:id="@+id/preview_view"
+	    android:layout_width="fill_parent"
+	    android:layout_gravity="center"
+	    android:layout_height="fill_parent"
+	    android:layout_centerInParent="true"
+	    />
+
+	<com.kingame.barcode.view.ViewfinderView
+	    android:id="@+id/viewfinder_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/transparent"
+	    />
+	
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="45dp">
+   	
+        <TableRow >
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pic_scan"
+                />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scaninfotitle"
+                android:textSize="17dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/contents_text_light"
+                />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scaninfo"
+                android:textSize="17dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/contents_text_light"
+                />
+            
+    	</TableRow>
+       
+   	</TableLayout>
+   	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+        <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:background="@drawable/pic_text_bg_unpressed"
+	        android:padding="10dp"
+        	>
+        
+			<ImageButton 
+			    android:id="@+id/flashBtn"
+			    android:layout_height="wrap_content"
+			    android:layout_width="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:background="@drawable/button_flash_unselected_selector"
+			    />
+        
+    	</RelativeLayout>
+    	
+    </RelativeLayout>
+    	
+	    
+
+</FrameLayout>
